@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 
 const Signup = () => {
+  const [formdata, setformdate] = useState({});
+  const handleinput = (e) => {};
   return (
     <div className="flex justify-center">
       <form
@@ -13,16 +16,19 @@ const Signup = () => {
           placeholder="username"
           id="username"
           className="p-3 rounded-lg border"
+          onChange={handleinput}
         />
         <input
           type="email"
           placeholder="email"
           className=" p-3 rounded-lg border"
+          onChange={handleinput}
         />
         <input
           type="password"
           placeholder="password"
           className=" p-3 rounded-lg border"
+          onChange={handleinput}
         />
         <button className="bg-white rounded-lg p-3">sign Up</button>
         <div>have an account ? log in here</div>
